@@ -110,12 +110,10 @@ class ApiClientImpl(private val applicationConfiguration: ApplicationConfigurati
                 categories = retrieveCategories(projectResponse)
             }
 
-            runBlocking {
-                tasksAsync.await()
-                categoriesAsync.await()
-                log.info("{} DONE Retrieving Children For Project '{}'.", projectResponse.id, projectResponse.name)
-                Project(projectResponse.id, projectResponse.name, tasks, categories)
-            }
+            tasksAsync.await()
+            categoriesAsync.await()
+            log.info("{} DONE Retrieving Children For Project '{}'.", projectResponse.id, projectResponse.name)
+            Project(projectResponse.id, projectResponse.name, tasks, categories)
         }
     }
 
