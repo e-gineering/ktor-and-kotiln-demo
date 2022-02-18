@@ -13,6 +13,12 @@ fun Application.configureRouting() {
 
     routing {
 
+//        route("/hello") {
+//            get {
+//                call.respondText("Yo!")
+//            }
+//        }
+
         route("/projectsSync") {
             get {
                 call.respond(routing.apiClient.getProjectsSync())
