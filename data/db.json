@@ -1,0 +1,27 @@
+{
+  "projects": [
+    { "id": 1, "name": "Project 1" },
+    { "id": 2, "name": "Project 2" },
+    { "id": 3, "name": "Project 3" }
+  ],
+  "tasks": [
+    { "id": 1, "name": "Project 1 Task 1", "projectId": 1 },
+    { "id": 2, "name": "Project 1 Task 2", "projectId": 1 },
+    { "id": 3, "name": "Project 1 Task 3", "projectId": 1 },
+    { "id": 4, "name": "Project 1 Task 4", "projectId": 1 },
+    { "id": 5, "name": "Project 2 Task 1", "projectId": 2 },
+    { "id": 6, "name": "Project 2 Task 2", "projectId": 2 },
+    { "id": 7, "name": "Project 2 Task 3", "projectId": 2 },
+    { "id": 8, "name": "Project 2 Task 1", "projectId": 3 },
+    { "id": 9, "name": "Project 2 Task 2", "projectId": 3 }
+  ],
+  "categories": [
+    { "id": 1, "name": "Project 1 Category 1", "projectId": 1 },
+    { "id": 2, "name": "Project 1 Category 2", "projectId": 1 },
+    { "id": 3, "name": "Project 1 Category 3", "projectId": 1 },
+    { "id": 4, "name": "Project 1 Category 4", "projectId": 1 },
+    { "id": 5, "name": "Project 2 Category 1", "projectId": 2 },
+    { "id": 6, "name": "Project 2 Category 2", "projectId": 2 },
+    { "id": 7, "name": "Project 2 Category 3", "projectId": 2 }
+  ]
+}
