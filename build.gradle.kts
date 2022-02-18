@@ -12,8 +12,10 @@ plugins {
 
 group = "com.egineering"
 version = "0.0.1"
+
 application {
-    mainClass.set("com.egineering.ApplicationKt")
+    mainClass.set("com.egineering.ktordemo.ApplicationKt")
+    applicationDefaultJvmArgs = listOf("-Dio.ktor.development=true")
 }
 
 repositories {
