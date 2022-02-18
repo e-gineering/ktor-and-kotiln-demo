@@ -1,5 +1,18 @@
 # Ktor and Kotlin
 
+## Mock API With `json-server`
+
+For some reason, just running `json-server` on the same machine as the Ktor server didn't work for me. The requests
+would fail, but for some reason running a Docker container of it works fine. That is what the `data` directory is
+for. It's the data file and an extension that adds some random amount of time to each request to simulate real-world
+variances in request times. To use run the following docker command replacing paths that work for your machine:
+
+`docker run -it -p 3000:80 -v ~/<paht-to>/ktor-demo/data:/data --name json-server clue/json-server --watch /data/db.json
+--delay 300 --middlewares /data/jitter.js`
+
+Of course that can be run in daemon mode if you don't want your shell busy, but I prefer to see the output from
+`json-server` in the console.
+
 ## Run Configuration
 ### IntelliJ IDEA / Android Studio
 
